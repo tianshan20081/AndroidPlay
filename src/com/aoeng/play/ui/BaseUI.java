@@ -21,6 +21,20 @@ public abstract class BaseUI extends ActionBarActivity {
 		initActionBar();
 	}
 
+	@Override
+	protected void onResume() {
+		// TODO Auto-generated method stub
+		mCurrentShowUI = this;
+		super.onResume();
+	}
+
+	@Override
+	protected void onPause() {
+		// TODO Auto-generated method stub
+		mCurrentShowUI = null;
+		super.onPause();
+	}
+
 	protected abstract void initActionBar();
 
 	protected abstract void initView();
@@ -30,7 +44,7 @@ public abstract class BaseUI extends ActionBarActivity {
 	public static void finishAll() {
 		LinkedList<BaseUI> copy;
 		synchronized (mUIs) {
-			copy = new LinkedList<>(mUIs);
+			copy = new LinkedList<BaseUI>(mUIs);
 		}
 		for (BaseUI ui : copy) {
 			ui.finish();
@@ -74,7 +88,7 @@ public abstract class BaseUI extends ActionBarActivity {
 	public static BaseUI getTopUI() {
 		LinkedList<BaseUI> copy;
 		synchronized (mUIs) {
-			copy = new LinkedList<>();
+			copy = new LinkedList<BaseUI>();
 		}
 		if (copy.size() > 0) {
 			return copy.get(copy.size() - 1);

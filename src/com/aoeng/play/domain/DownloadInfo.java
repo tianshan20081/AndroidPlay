@@ -26,4 +26,61 @@ public class DownloadInfo {
 		return downloadInfo;
 	}
 
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public String getAppName() {
+		return appName;
+	}
+
+	public void setAppName(String appName) {
+		this.appName = appName;
+	}
+
+	public long getAppSize() {
+		return appSize;
+	}
+
+	public void setAppSize(long appSize) {
+		this.appSize = appSize;
+	}
+
+	public long getCurrentSize() {
+		return currentSize;
+	}
+
+	public void setCurrentSize(long currentSize) {
+		this.currentSize = currentSize;
+	}
+
+	public int getDownloadState() {
+		return downloadState;
+	}
+
+	public void setDownloadState(int downloadState) {
+		this.downloadState = downloadState;
+	}
+
+	public String getUrl() {
+		return url;
+	}
+
+	public void setUrl(String url) {
+		this.url = url;
+	}
+
+	public String getPath() {
+		return path;
+	}
+
+	public void setPath(String path) {
+		this.path = path;
+	}
+	
+
 }

@@ -460,7 +460,7 @@ public class FileUtils {
 			Properties properties = new Properties();
 			properties.load(fis);
 			// 因为 Properties 继承了 Map ,所以通过 properties 构造一个 map
-			map = new HashMap<>((Map) properties);
+			map = new HashMap<String, String>((Map) properties);
 		} catch (Exception e) {
 			// TODO: handle exception
 			LogUtils.e(e);

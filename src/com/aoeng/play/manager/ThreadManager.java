@@ -23,7 +23,7 @@ public class ThreadManager {
 	private static ThreadPoolProxy mDownloadPool = null;
 	private static Object mDownloadLock = new Object();
 
-	private static Map<String, ThreadPoolProxy> mMap = new HashMap<>();
+	private static Map<String, ThreadPoolProxy> mMap = new HashMap<String, ThreadManager.ThreadPoolProxy>();
 	private static Object mSingleLock = new Object();
 
 	/**
