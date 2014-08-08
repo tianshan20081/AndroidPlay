@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aoeng="http://schemas.android.com/apk/res/com.aoeng.play"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.aoeng.play.views.RatioLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        aoeng:ratio="3.66" >
+    </com.aoeng.play.views.RatioLayout>
+
+</LinearLayout>
