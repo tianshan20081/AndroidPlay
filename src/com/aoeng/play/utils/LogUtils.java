@@ -26,7 +26,7 @@ public class LogUtils {
 
 	public static String mTag = "Android_play";
 	/** 允許日誌輸出級別 0 ：全部輸出，大於6 全部不輸出 */
-	private static int mDebugable = LEVEL_NONE;
+	private static int mDebugable = 6;
 	/** 用於計時的變量 */
 	private static long mTimestamp = 0;
 	/** 寫文件的 鎖對象 */

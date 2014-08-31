@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 
-public abstract class BaseUI extends ActionBarActivity {
+public class BaseUI extends ActionBarActivity {
 	// 记录处于前台的 UI
 	private static BaseUI mCurrentShowUI = null;
 	// 用于记录 打开过的 UI ACTIVITY
@@ -35,11 +35,14 @@ public abstract class BaseUI extends ActionBarActivity {
 		super.onPause();
 	}
 
-	protected abstract void initActionBar();
+	protected void initActionBar() {
+	};
 
-	protected abstract void initView();
+	protected void initView() {
+	};
 
-	protected abstract void init();
+	protected void init() {
+	};
 
 	public static void finishAll() {
 		LinkedList<BaseUI> copy;
@@ -76,7 +79,7 @@ public abstract class BaseUI extends ActionBarActivity {
 	 * 
 	 * @return
 	 */
-	public static BaseUI getCurrentShowUI() {
+	public static BaseUI getForegroundActivity() {
 		return mCurrentShowUI;
 	}
 

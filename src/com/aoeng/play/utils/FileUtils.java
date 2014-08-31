@@ -23,7 +23,7 @@ public class FileUtils {
 	 * 
 	 * @return
 	 */
-	public static boolean isSDCardAviailable() {
+	public static boolean isSDCardAvailable() {
 		if (Environment.MEDIA_MOUNTED.equals(Environment
 				.getExternalStorageState())) {
 			return true;
@@ -69,7 +69,7 @@ public class FileUtils {
 	private static String getDir(String name) {
 		// TODO Auto-generated method stub
 		StringBuilder sb = new StringBuilder();
-		if (isSDCardAviailable()) {
+		if (isSDCardAvailable()) {
 			sb.append(getExternalStoragePath());
 		} else
 			sb.append(getCachePath());
