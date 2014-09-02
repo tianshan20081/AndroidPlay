@@ -17,7 +17,6 @@ public class BaseUI extends ActionBarActivity {
 		super.onCreate(savedInstanceState);
 		init();
 		initView();
-		
 
 		initActionBar();
 	}
