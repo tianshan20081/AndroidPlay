@@ -18,10 +18,6 @@ public class BaseUI extends ActionBarActivity {
 		init();
 		initView();
 		
-		
-		
-		
-		
 
 		initActionBar();
 	}
