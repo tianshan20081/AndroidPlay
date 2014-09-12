@@ -46,7 +46,8 @@ public class DrawableUtils {
 	}
 
 	/** 获取图片的大小 */
-	@SuppressLint("NewApi") public static int getDrawableSize(Drawable drawable) {
+	@SuppressLint("NewApi")
+	public static int getDrawableSize(Drawable drawable) {
 		if (drawable == null) {
 			return 0;
 		}
