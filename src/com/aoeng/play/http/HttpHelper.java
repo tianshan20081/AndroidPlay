@@ -53,7 +53,7 @@ public class HttpHelper {
 	/** 执行网络访问 */
 	private static HttpResult execute(String url, HttpRequestBase requestBase) {
 		boolean isHttps = url.startsWith("https://");// 判断是否需要采用https
-		AbstractHttpClient httpClient = HttpClientFactory.create(isHttps);
+		AbstractHttpClient httpClient = HttpclientFactory.create(isHttps);
 		HttpContext httpContext = new SyncBasicHttpContext(new BasicHttpContext());
 		HttpRequestRetryHandler retryHandler = httpClient.getHttpRequestRetryHandler();// 获取重试机制
 		int retryCount = 0;
